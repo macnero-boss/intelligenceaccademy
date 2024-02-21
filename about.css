@@ -1,0 +1,60 @@
+article{
+  margin-top: 160px;
+}
+section{
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+}
+.heading-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../wall.png");
+    height: 100px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+position: relative;
+  }
+  
+  .heading-text {
+    text-align: right;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: small;
+    color: aqua;
+    margin-left: 10%;
+    text-shadow: #555 5px;
+  }
+  
+  .hero-text button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 10px 25px;
+      color: black;
+      background-color: #ddd;
+      text-align: center;
+      cursor: pointer;
+    }
+    
+    .hero-text button:hover {
+      background-color: #555;
+      color: white;
+    }
+    .secss2 .history{
+        display: block;
+        border-radius: 10px;
+        width: 70%;
+        margin-left: 30%;
+        font-size: large;
+    }
+    .secss2 .vision{
+        display: block;
+        border-radius: 10px;
+        width: 70%;
+        margin-right: 30%;
+        font-size: large;
+    }

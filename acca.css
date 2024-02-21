@@ -1,0 +1,81 @@
+.secs2{
+    display: block;
+    margin-top: 20px;
+}
+.secs2 .facilities{
+    display: inline-flexbox;
+   
+    border-radius: 10px;
+    width: 100%;
+    font-size: large;
+}
+.secs2 .staff{
+    display: block;
+   
+    border-radius: 10px;
+    width: 100%;
+    font-size: large;
+}
+.secs2 .comp{
+    display: block;
+   
+    border-radius: 10px;
+    width: 100%;
+    font-size: large;
+}
+.secs2 .clubs{
+    display: block;
+   
+    border-radius: 10px;
+    width: 100%;
+    font-size: large;
+}
+.heading-image {
+    background-image: linear-gradient(#9F7944, #13325B, url("../intel.jpg"));
+    height: 100px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+position: relative;
+  }
+  
+  .heading-text {
+    text-align: right;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: small;
+    color: aqua;
+    margin-left: 10%;
+  }
+  
+  .hero-text button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 10px 25px;
+      color: black;
+      background-color: #ddd;
+      text-align: center;
+      cursor: pointer;
+    }
+    
+    .hero-text button:hover {
+      background-color: #555;
+      color: white;
+    }
+    .clubs a,.facilities a,.comp a,.staff a{
+        display: block;
+        text-decoration: none;
+        padding: 20px 16px;
+        background: linear-gradient(to right, black, white);
+        width: fit-content;
+        color: aqua;
+
+    }
+    .clubs,.comp,.facilities,.staff{
+        margin-top: 10px;
+    }
