@@ -30,9 +30,9 @@
     width: 100%;
     font-size: large;
 }
-.heading-image {
-    background-image: linear-gradient(#9F7944, #13325B, url("../intel.jpg"));
-    height: 100px;
+.hero-image {
+    background: linear-gradient(#9F7944, #13325B);
+    height: 1000px;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -40,16 +40,16 @@
 position: relative;
   }
   
-  .heading-text {
-    text-align: right;
+  .hero-text {
+    text-align: center;
     position: absolute;
-    left: 10%;
     top: 50%;
     transform: translate(-50%, -50%);
     color: white;
     font-size: small;
     color: aqua;
-    margin-left: 10%;
+    width: 100%;
+    
   }
   
   .hero-text button {
@@ -61,6 +61,8 @@ position: relative;
       background-color: #ddd;
       text-align: center;
       cursor: pointer;
+      margin-left: auto;
+      margin-right: auto;
     }
     
     .hero-text button:hover {
