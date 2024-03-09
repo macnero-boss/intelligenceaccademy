@@ -7,18 +7,80 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/90d16cf457.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel Decorative">
     <!-- UIkit CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.18.3/dist/css/uikit.min.css" />
 
 <!-- UIkit JS -->
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.18.3/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.18.3/dist/js/uikit-icons.min.js"></script>
+<STYLE>
+  button {
+    font-family: inherit;
+    font-size: 18px;
+    background: linear-gradient(to bottom, blue 0%, black 100%);
+    color: white;
+    padding: 0.8em 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+  }
+  
+  button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  button span {
+    display: block;
+    margin-left: 0.4em;
+    transition: all 0.3s;
+  }
+  
+  button svg {
+    width: 18px;
+    height: 18px;
+    fill: white;
+    transition: all 0.3s;
+  }
+  
+  button .svg-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 0.5em;
+    transition: all 0.3s;
+  }
+  
+  button:hover .svg-wrapper {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  button:hover svg {
+    transform: rotate(45deg);
+  }
+  
+</STYLE>
     </head>
     <body>
       <header class="absolute inset-x-0 top-0 z-50 bg-white" uk-sticky="end: !.uk-height-large; offset: 0; show-on-up: true; animation: uk-animation-slide-top uk-scrollspy">
         <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div class="flex lg:flex-1">
-            <a href="index.php" class="-m-1.5 p-1.5">
+            <a href="index.html" class="-m-1.5 p-1.5">
               <span class="sr-only">Your Company</span>
               <img class="h-8 w-auto" src="logobg.png" alt="">
             </a>
@@ -32,10 +94,10 @@
             </button>
           </div>
           <div class="hidden lg:flex lg:gap-x-12">
-            <a href="accademics.php" class="text-sm font-semibold leading-6 text-gray-900">Accademics</a>
-            <a href="admission.php" class="text-sm font-semibold leading-6 text-gray-900">Admission</a>
-            <a href="about.php" class="text-sm font-semibold leading-6 text-gray-900">About Us</a>
-            <a href="gallery.php" class="text-sm font-semibold leading-6 text-gray-900">Gallery</a>
+            <a href="accademics.html" class="text-sm font-semibold leading-6 text-gray-900">Accademics</a>
+            <a href="admission.html" class="text-sm font-semibold leading-6 text-gray-900">Admission</a>
+            <a href="about.html" class="text-sm font-semibold leading-6 text-gray-900">About Us</a>
+            <a href="gallery.html" class="text-sm font-semibold leading-6 text-gray-900">Gallery</a>
           </div>
          
         </nav>
@@ -45,7 +107,7 @@
           <div class="fixed inset-0 z-50"></div>
           <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div class="flex items-center justify-between">
-              <a href="index.php" class="-m-1.5 p-1.5">
+              <a href="index.html" class="-m-1.5 p-1.5">
                 <span class="sr-only">Your Company</span>
                 <img class="h-8 w-auto" src="logobg.png" alt="">
               </a>
@@ -59,10 +121,10 @@
             <div class="mt-6 flow-root" >
               <div class="-my-6 divide-y divide-gray-500/10">
                 <div class="space-y-2 py-6">
-                  <a href="accademics.php" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Academics</a>
-                  <a href="admission.php" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Admission</a>
-                  <a href="about.php" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About</a>
-                  <a href="gallery.php" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Gallery</a>
+                  <a href="accademics.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Academics</a>
+                  <a href="admission.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Admission</a>
+                  <a href="about.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About</a>
+                  <a href="gallery.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Gallery</a>
                 </div>
               </div>
             </div>
@@ -74,7 +136,7 @@
 
                 <div class="hero-image ">
                     <div class="hero-text">
-                        <h1 style="font-size:50px">Admission Portal</h1>
+                        <h1 style="font-size:50px;font-family: Cinzel Decorative">Admission Portal</h1>
 
                     </div>
                 </div>
@@ -98,9 +160,8 @@
                   <div class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
                     <div class="lg:pr-4">
                       <div class="lg:max-w-lg">
-                        <p class="text-base font-semibold leading-7 text-indigo-600">Deploy faster</p>
-                        <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">A better workflow</h1>
-                        <p class="mt-6 text-xl leading-8 text-gray-700">Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas.</p>
+                        <p class="text-base font-semibold leading-7 text-indigo-600">A Better Learner</p>
+                        <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"  style="font-family: Cinzel">Our Enrolment Process</h1>
                       </div>
                     </div>
                   </div>
@@ -110,31 +171,40 @@
                   <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
                     <div class="lg:pr-4">
                       <div class="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
-                        <p>Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id.</p>
                         <ul role="list" class="mt-8 space-y-8 text-gray-600">
                           <li class="flex gap-x-3">
-                            <svg class="mt-1 h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                              <path fill-rule="evenodd" d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z" clip-rule="evenodd" />
-                            </svg>
-                            <span><strong class="font-semibold text-gray-900">Push to deploy.</strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</span>
+                            <span><strong class="font-semibold text-gray-900">1. Inquire and Gather Information.</strong> 
+                              <br> Parents or guardians can inquire about enrollment by contacting our admission office via phone or email.
+                            <br>  Our staff will provide information about the school, curriculum, and admission requirements.</span>
                           </li>
                           <li class="flex gap-x-3">
-                            <svg class="mt-1 h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                              <path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd" />
-                            </svg>
-                            <span><strong class="font-semibold text-gray-900">SSL certificates.</strong> Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.</span>
+                            
+                            <span><strong class="font-semibold text-gray-900">2. Schedule a Visit.</strong><br> Interested families are encouraged to schedule a campus visit.
+                             <br> During the visit, parents and students can explore our facilities, meet teachers, and get a feel for the school environment.</span>
                           </li>
                           <li class="flex gap-x-3">
-                            <svg class="mt-1 h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                              <path d="M4.632 3.533A2 2 0 016.577 2h6.846a2 2 0 011.945 1.533l1.976 8.234A3.489 3.489 0 0016 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234z" />
-                              <path fill-rule="evenodd" d="M4 13a2 2 0 100 4h12a2 2 0 100-4H4zm11.24 2a.75.75 0 01.75-.75H16a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75h-.01a.75.75 0 01-.75-.75V15zm-2.25-.75a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 00.75-.75V15a.75.75 0 00-.75-.75h-.01z" clip-rule="evenodd" />
-                            </svg>
-                            <span><strong class="font-semibold text-gray-900">Database backups.</strong> Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</span>
+                            <span><strong class="font-semibold text-gray-900">3. Submit Application.</strong><br> Parents can obtain the admission application form from our website or directly from the school office.
+                             <br> Complete the form with accurate information and attach any required documents (birth certificate, previous school records, etc.)..</span>
+                          </li>
+                          <li class="flex gap-x-3">
+                            <span><strong class="font-semibold text-gray-900">4. Entrance Assessment (if applicable).</strong><br> Depending on the grade level, students may need to take an entrance assessment or placement test.
+                             <br>The assessment helps us understand the student’s academic level and tailor our support accordingly.</span>
+                          </li>
+                          <li class="flex gap-x-3">
+                            <span><strong class="font-semibold text-gray-900">5. Interview (if applicable).</strong><br> Some grade levels may require an interview with the student and parents.
+                             <br>The interview allows us to learn more about the student’s interests, goals, and any special needs.</span>
+                          </li>
+                          <li class="flex gap-x-3">
+                            <span><strong class="font-semibold text-gray-900">6. Admission Decision.</strong><br> Our admission committee reviews each application.
+                             <br>Parents will receive an admission decision via email or phone.</span>
+                          </li>
+                          <li class="flex gap-x-3">
+                            <span><strong class="font-semibold text-gray-900">7. Acceptance and Enrollment.</strong><br> If accepted, parents will receive an acceptance letter.
+                             <br> Pay the registration fee to secure the student’s spot.</span>
                           </li>
                         </ul>
-                        <p class="mt-8">Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.</p>
-                        <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">No server? No problem.</h2>
-                        <p class="mt-6">Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat in. Convallis arcu ipsum urna nibh. Pharetra, euismod vitae interdum mauris enim, consequat vulputate nibh. Maecenas pellentesque id sed tellus mauris, ultrices mauris. Tincidunt enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam turpis ipsum eu a sed convallis diam.</p>
+                        <p class="mt-8">We look forward to welcoming new learners to our school community! If you have any questions, feel free to contact our admission office.</p>
+                        <a href="form.pdf" download>        <button type="submit" class="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Print Form</button></a>
                       </div>
                     </div>
                   </div>
@@ -142,5 +212,59 @@
               </div>
               
         </article>
+        <footer>
+          <footer class="p-4 bg-white md:p-8 lg:p-10 dark:bg-gray-800">
+            <div class="mx-auto max-w-screen-xl text-center">
+                <a href="#" class="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white" >
+         
+                <span style="font-family: Cinzel">Intelligence &nbsp;</span><span style="font-family: Cinzel Decorative"> Accademy</span>
+                </a>
+                <p class="my-6 text-gray-500 dark:text-gray-400">Open-source library of over 400+ web components and interactive elements built for better web.</p>
+                <ul class="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white">
+                    <li>
+                        <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="mr-4 hover:underline md:mr-6">Premium</a>
+                    </li>
+                    <li>
+                        <a href="#" class="mr-4 hover:underline md:mr-6 ">Campaigns</a>
+                    </li>
+                    <li>
+                        <a href="#" class="mr-4 hover:underline md:mr-6">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#" class="mr-4 hover:underline md:mr-6">Affiliate Program</a>
+                    </li>
+                    <li>
+                        <a href="#" class="mr-4 hover:underline md:mr-6">FAQs</a>
+                    </li>
+                    <li>
+                        <a href="#" class="mr-4 hover:underline md:mr-6">Contact</a>
+                    </li>
+                </ul>
+                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2021-2022 <a href="#" class="hover:underline">Intelligence Accademy</a>. All Rights Reserved.</span>
+            </div>
+          </footer>
+        </footer>
+        <script>
+          const menu = document.getElementById('menu');
+const closeButton = document.getElementById('closebtn');
+
+closeButton.addEventListener('click', () => {
+menu.classList.add('hidden'); // Replace "hidden" with your desired class for hiding the menu
+});
+
+      </script>
+      <script>
+          const menus = document.getElementById('menu');
+const openButton = document.getElementById('open');
+
+openButton.addEventListener('click', () => {
+menu.classList.remove('hidden'); // Replace "hidden" with your desired class for hiding the menu
+});
+
+      </script>
     </body>
+
 </html>

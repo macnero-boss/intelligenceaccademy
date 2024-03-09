@@ -16,7 +16,7 @@
         <header class="absolute inset-x-0 top-0 z-50 bg-white" uk-sticky="end: !.uk-height-large; offset: 0; show-on-up: true; animation: uk-animation-slide-top uk-scrollspy">
             <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
               <div class="flex lg:flex-1">
-                <a href="index.php" class="-m-1.5 p-1.5">
+                <a href="index.html" class="-m-1.5 p-1.5">
                   <span class="sr-only">Your Company</span>
                   <img class="h-8 w-auto" src="logobg.png" alt="">
                 </a>
@@ -30,10 +30,10 @@
                 </button>
               </div>
               <div class="hidden lg:flex lg:gap-x-12">
-                <a href="accademics.php" class="text-sm font-semibold leading-6 text-gray-900">Accademics</a>
-                <a href="admission.php" class="text-sm font-semibold leading-6 text-gray-900">Admission</a>
-                <a href="about.php" class="text-sm font-semibold leading-6 text-gray-900">About Us</a>
-                <a href="gallery.php" class="text-sm font-semibold leading-6 text-gray-900">Gallery</a>
+                <a href="accademics.html" class="text-sm font-semibold leading-6 text-gray-900">Accademics</a>
+                <a href="admission.html" class="text-sm font-semibold leading-6 text-gray-900">Admission</a>
+                <a href="about.html" class="text-sm font-semibold leading-6 text-gray-900">About Us</a>
+                <a href="gallery.html" class="text-sm font-semibold leading-6 text-gray-900">Gallery</a>
               </div>
              
             </nav>
@@ -43,7 +43,7 @@
               <div class="fixed inset-0 z-50"></div>
               <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                 <div class="flex items-center justify-between">
-                  <a href="index.php" class="-m-1.5 p-1.5">
+                  <a href="index.html" class="-m-1.5 p-1.5">
                     <span class="sr-only">Your Company</span>
                     <img class="h-8 w-auto" src="logobg.png" alt="">
                   </a>
@@ -57,10 +57,10 @@
                 <div class="mt-6 flow-root" >
                   <div class="-my-6 divide-y divide-gray-500/10">
                     <div class="space-y-2 py-6">
-                      <a href="accademics.php" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Academics</a>
-                      <a href="admission.php" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Admission</a>
-                      <a href="about.php" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About</a>
-                      <a href="gallery.php" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Gallery</a>
+                      <a href="accademics.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Academics</a>
+                      <a href="admission.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Admission</a>
+                      <a href="about.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About</a>
+                      <a href="gallery.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Gallery</a>
                     </div>
                   </div>
                 </div>
@@ -129,5 +129,23 @@
                 </div>
             </section>
         </article>
+        <script>
+          const menu = document.getElementById('menu');
+const closeButton = document.getElementById('closebtn');
+
+closeButton.addEventListener('click', () => {
+menu.classList.add('hidden'); // Replace "hidden" with your desired class for hiding the menu
+});
+
+      </script>
+      <script>
+          const menus = document.getElementById('menu');
+const openButton = document.getElementById('open');
+
+openButton.addEventListener('click', () => {
+menu.classList.remove('hidden'); // Replace "hidden" with your desired class for hiding the menu
+});
+
+      </script>
     </body>
 </html>
